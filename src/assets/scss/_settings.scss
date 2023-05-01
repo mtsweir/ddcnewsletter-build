@@ -1,0 +1,172 @@
+//  Foundation for Emails Settings
+//  ------------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Grid
+//   3. Block Grid
+//   4. Typography
+//   5. Button
+//   6. Callout
+//   7. Menu
+//   8. Thumbnail
+
+
+// 1. Global
+// ---------
+
+// Spacer
+$spacer: 16px;
+
+// DDC Colours
+$ddc-blue: #259cd8;
+$ddc-teal: #27baa4;
+
+$shade-1: #242424;
+$shade-2: #484848;
+$shade-3: #727272;
+$shade-4: #d5d5d5;
+$shade-5: #e7e7e7;
+$shade-6: #f3f3f3;
+$shade-7: #f8f8f8;
+
+$color-link: #2270ee;
+$fda-primary: #007cbe;
+
+// Base Colours
+$primary-color: $ddc-blue;
+$secondary-color: $ddc-teal;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #f8f8f8;
+$medium-gray: #cacaca;
+$dark-gray: #747474;
+$black: $shade-1;
+$white: #ffffff;
+$pre-color: #ff6908;
+$global-width: 580px;
+$global-width-small: 100%;
+$global-gutter: 50px;
+$body-background: $light-gray;
+$container-background: $white;
+$global-padding: 30px;
+$global-margin: 30px;
+$global-radius: 4px;
+$global-rounded: 500px;
+$global-breakpoint: $global-width + $global-gutter;
+
+// 2. Grid
+// -------
+
+$grid-column-count: 12;
+$column-padding-bottom: $global-padding;
+$container-radius: 0;
+
+// 3. Block Grid
+// -------------
+
+$block-grid-max: 8;
+$block-grid-gutter: $global-gutter;
+
+// 4. Typography
+// -------------
+
+$text-medium: 15px;
+$text-small: 12px;
+$text-tiny: 11px;
+
+$global-font-color: $shade-2;
+$body-font-family: Helvetica, Arial, sans-serif;
+$global-font-weight: 400;
+$global-font-weight-bold: 600;
+$global-line-height: 1.5;
+$global-font-size: 16px;
+$body-line-height: $global-line-height;
+$header-color: inherit;
+$header-font-family: $body-font-family;
+$header-font-weight: 600;
+$header-line-height: 1.3;
+$header-margin-bottom: 8px;
+$h1-font-size: 32px;
+$h2-font-size: 22px;
+$h3-font-size: 20px;
+$h4-font-size: 18px;
+$h5-font-size: 15px;
+$h6-font-size: 12px;
+$paragraph-margin-bottom: 16px;
+$small-font-size: 80%;
+$small-font-color: $shade-3;
+$lead-font-size: $global-font-size * 1.25;
+$lead-line-height: 1.6;
+$text-padding: 10px;
+$subheader-lineheight: 1.4;
+$subheader-color: $dark-gray;
+$subheader-font-weight: $global-font-weight;
+$subheader-margin-top: 4px;
+$subheader-margin-bottom: 8px;
+$hr-width: $global-width;
+$hr-border: 1px solid $shade-5;
+$hr-margin: 20px auto;
+$anchor-text-decoration: none;
+$anchor-color: $color-link;
+$anchor-color-visited: $color-link;
+$anchor-color-hover: darken($color-link, 20%);
+$anchor-color-active: $anchor-color-hover;
+$stat-font-size: 40px;
+
+// 5. Button
+// ---------
+
+$button-padding: (
+  tiny: 4px 8px 4px 8px,
+  small: 5px 10px 5px 10px,
+  default: 10px 30px 10px 30px,
+  large: 1px 30px 12px 30px,
+);
+$button-font-size: (
+  tiny: 10px,
+  small: 12px,
+  default: 16px,
+  large: 16px,
+);
+$button-color: $white;
+$button-color-alt: $medium-gray;
+$button-font-weight: 400;
+$button-margin: 0 0 $global-margin 0;
+$button-background: $primary-color;
+$button-border: 2px solid $button-background;
+$button-radius: $global-radius;
+$button-rounded: $global-rounded;
+
+// 6. Callout
+// ----------
+
+$callout-background: $white;
+$callout-background-fade: 85%;
+$callout-padding: 20px;
+$callout-margin-bottom: $global-margin;
+$callout-border: 1px solid darken($callout-background, 20%);
+$callout-border-secondary: 1px solid darken($secondary-color, 20%);
+$callout-border-success: 1px solid darken($success-color, 20%);
+$callout-border-warning: 1px solid darken($warning-color, 20%);
+$callout-border-alert: 1px solid darken($alert-color, 20%);
+
+// 7. Menu
+// -------
+
+$menu-item-padding: 10px;
+$menu-item-gutter: 10px;
+$menu-item-color: $color-link;
+
+// 8. Thumbnail
+// ------------
+
+$thumbnail-border: solid 4px $white;
+$thumbnail-margin-bottom: $global-margin;
+$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
+$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-transition: box-shadow 200ms ease-out;
+$thumbnail-radius: $global-radius;
+

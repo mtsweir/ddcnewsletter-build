@@ -1,0 +1,475 @@
+//
+//  Table of Contents:
+//
+
+
+//   1. Typography
+//   2. Headings
+//   3. Lists
+//   4. Utilities
+//   5. Rows & Sections
+//   6. Components
+//   7. Template Header & Footer
+//   8. Vendor
+//   9. Responsive
+
+
+// 1. Typography
+// ==========================================================================
+
+body,
+html, 
+.body {
+	background: $body-background !important;
+	-webkit-text-size-adjust: 100%;
+}
+
+// Set font weight for consistency
+
+strong {
+	font-weight: $global-font-weight-bold;
+}
+
+// Links
+
+a {
+	font-weight: $global-font-weight;
+
+	&:hover {
+		color: $shade-1;
+	}
+}
+
+.link-grey {
+	color: $global-font-color;
+	&:hover {
+		color: $shade-1;
+	}
+}
+
+
+// 2. Headings
+// ==========================================================================
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: $header-line-height;
+}
+
+h2 {
+	margin-top: 32px;
+	// Prevent default hyphens
+	-webkit-hyphens: none;
+	hyphens: none;
+}
+
+.header-trim {
+	margin-bottom: $spacer / 4 !important;
+}
+
+.sub-header {
+	margin-bottom: $spacer !important;
+	line-height: 1.4;
+}
+
+.header-label {
+	font-size: $text-small;
+	font-weight: $global-font-weight-bold;
+	letter-spacing: 0.5px;
+}
+
+.header-label-promo {
+	color: $secondary-color;
+}
+
+.header-label-social {
+	margin-bottom: 8px;
+}
+
+
+// 3. Lists
+// ==========================================================================
+
+ul {
+	padding-left: $spacer;
+}
+
+li {
+	margin-left: 0 !important; // reset for Gmail client
+	margin-bottom: $spacer;
+
+	p {
+		line-height: 22px;
+	}
+}
+
+// Removes bullet to align with left content edge.
+
+.list-unstyled {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+	list-style-type: none !important;
+}
+
+// Style links in large font size.
+
+.list-featured {
+	@extend .text-muted;
+
+	li {
+		margin-bottom: 24px;
+	}
+	a {
+		font-size: 18px;
+	}
+	p {
+		margin-top: 6px;
+		margin-bottom: 0;
+		@extend .text-muted;
+	}
+	p a {
+		font-size: 16px;	
+	}
+}
+
+.list-block {
+	a {
+		display: block;
+	}
+}
+
+// Style links as normal (400) font weight.
+
+.list-secondary {
+	a {
+		font-weight: $global-font-weight !important;
+	}
+}
+
+// Tools & Resources
+
+.list-resources {
+	ul {
+		margin: 0 !important;
+	}
+}
+
+// Med Reminders
+
+.reminder {
+	h4 {
+		margin: 0 0 4px 0;
+	}
+}
+
+.list-meds {
+	li {
+		margin: 0 0 $spacer 0 !important;
+		padding-bottom: $spacer !important;
+		border-bottom: 1px solid $shade-5;
+		p {
+			margin: 0 !important;
+		}
+	}
+}
+
+
+// 4. Utilities
+// ==========================================================================
+
+// Margins
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+// Text styles
+
+.text-small {
+	font-size: $text-small;
+}
+
+.text-medium {
+	font-size: $text-medium;
+}
+
+.text-muted {
+	color: $shade-3;
+}
+
+.text-uppercase {
+	text-transform: uppercase !important;
+}
+
+.text-nowrap {
+	white-space: nowrap !important;
+}
+
+// Dividers
+
+hr {
+	margin: 0 0 32px 0 !important;
+	padding: 0 !important;
+	clear: both;
+	height: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid $shade-5;
+	border-left: 0;
+}
+
+
+// 5. Rows & Sections
+// ==========================================================================
+
+// Row column reset
+// Removes bottom column padding, this would be used for cases where you
+// don't want bottom padding between two elements. e.g H2 and <ul>.
+
+.row-trim-columns {
+	.columns {
+		padding-bottom: 0 !important;
+	}
+}
+
+table.body .reminder {
+	.first {
+		padding-right: 0 !important;
+	}
+
+	p {
+		margin-bottom: 0 !important;
+	}
+
+	img {
+		width: 44px !important;
+		height: auto !important;
+		opacity: 0.2;
+	}
+}
+
+
+// 6. Components
+// ==========================================================================
+
+// Buttons
+
+// Control custom buttons
+
+.btn-control-social {
+	width: 30px !important;
+	height: 30px !important;
+}
+
+.btn-control-app {
+	height: 40px !important;
+}
+
+// Social buttons
+
+.btn-social table td {
+	background: $shade-5 !important;
+
+	a {
+		color: $shade-2 !important;		
+	}
+}
+
+// Offsetting buttons
+// Use .btn-offset for better margin space between sections.
+
+.btn-offset {
+	margin-top: 30px !important;
+	margin-bottom: 10px !important;
+}
+
+// Callout
+
+.sponsored .callout {
+	margin-bottom: 0 !important;
+}
+
+.sponsored .callout-inner {
+	padding: 0 !important;
+	background: $white !important;
+}
+
+.callout-inner {
+	border: 0 !important;
+}
+
+// Callout - overrides
+
+th.callout-inner.success {
+	color: $shade-2;
+	background: #DFF5F2 !important;
+}
+
+
+// Slideshow
+
+.slideshow {
+	// fix for height not working
+	img {
+		height: auto !important;
+	}
+}
+
+
+// 7. Template Header & Footer
+// ==========================================================================
+
+// Template Header
+
+.header .columns {
+	padding-bottom: 0;
+}
+
+.header p {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+// Header - Secondary
+
+.header-secondary {
+	background: $white;
+}
+
+.header-secondary .wrapper-inner {
+	padding: 10px;
+}
+
+.header-secondary p {
+	margin: 0 !important;
+	padding: 0 !important;
+	color: $shade-3;
+	font-size: $text-tiny;
+}
+
+.header-secondary a {
+	font-weight: $global-font-weight !important;
+}
+
+// Header - Primary
+
+.header-primary {
+	background: $light-gray;
+}
+
+.header-primary .wrapper-inner {
+	padding: 20px 20px 20px;
+}
+
+.header-primary .container {
+	background: transparent;
+}
+
+.header-title {
+	font-size: 14px;
+	font-weight: $global-font-weight-bold;
+}
+
+.header-sub-title {
+	font-size: 14px;
+}
+
+// Template Footer
+
+.footer,
+.footer .container {
+	background: $light-gray;
+}
+
+.footer-nav {
+	a {
+		font-size: $text-small;
+		font-weight: $global-font-weight !important;
+	}
+}
+
+.row-social {
+	background: $white;
+}
+
+table.footer-nav-social th.menu-item {
+	padding: 10px !important;
+}
+
+
+// 8. Vendor
+// ==========================================================================
+
+// Website Logos
+
+.logo-ddc {
+	height: 44px !important;
+}
+
+.logo-fda {
+	height: 50px !important;
+}
+
+.logo-medwatch {
+	padding: 0 !important;
+	width: 160px !important;
+	height: auto !important;
+}
+
+
+// 9. Responsive
+// ==========================================================================
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+
+	// reduce column padding for small devices
+	table.body .columns {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+
+	.logo-ddc {
+		margin-bottom: 10px !important;
+	}
+
+	.header-title,
+	.header-sub-title {
+		font-size: 14px;
+	}
+
+	.list-secondary {
+		padding-left: 0 !important;
+		list-style: none !important;
+	}
+
+	// reduce padding between footer nav links
+
+	table.footer-nav th.menu-item {
+		padding: 10px 5px;
+	}
+
+}
+
+@media only screen and (min-width: #{$global-breakpoint}) {
+
+	// Row dual column reset
+	// Removes padding on specific columns, applies to large screens only
+	// as mobile definitions will reset these values, which is fine.
+
+	.slideshow {
+		.first {
+			padding-right: 20px !important;
+		}
+		.last {
+			padding-left: 0 !important;
+		}
+	}
+
+}
